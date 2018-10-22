@@ -9,3 +9,4 @@ Benchmark de las distintas estrategias para crear conexiones a base de datos mys
 5. Desde el directorio nodemysql ejecutar npm update para instalar las dependencias
 6. Ejecutar `$node simple.js` o `$node *.js` donde * es cualquiera de los archivos que están en la raíz
 7. Visitar http://localhost:8080/
+8. Las pruebas para el benchmark se realizan con la herramienta "ab" incluída en Apache: `$ab -c50 -n15000 http://localhost:8080/` donde **n** es la cantidad total de peticiones que simulará la herramienta y **c** es la cantidad de hilos concurrentes que simulará (número de usuarios concurrentes)
